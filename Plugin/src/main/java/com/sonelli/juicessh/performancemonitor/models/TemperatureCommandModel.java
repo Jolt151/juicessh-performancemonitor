@@ -15,28 +15,16 @@ public class TemperatureCommandModel {
         this.textFormatter = textFormatter;
     }
 
-
     public String getCommand() {
         return command;
-    }
-
-    public void setCommand(String command) {
-        this.command = command;
     }
 
     public Pattern getPattern() {
         return pattern;
     }
 
-    public void setPattern(Pattern pattern) {
-        this.pattern = pattern;
-    }
-
     public TextFormatter getTextFormatter() {
         return textFormatter;
     }
 
-    public void setTextFormatter(TextFormatter textFormatter) {
-        this.textFormatter = textFormatter;
-    }
 }
