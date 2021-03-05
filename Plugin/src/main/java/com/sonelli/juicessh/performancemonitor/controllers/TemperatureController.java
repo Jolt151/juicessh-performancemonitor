@@ -36,9 +36,11 @@ public class TemperatureController extends BaseController {
                     new TextFormatter() {
                         @Override
                         public String format(Pattern p, String line) {
-                            int intLine = Integer.parseInt(line);
-                            double doubleTemp = intLine / 1000;
-                            return doubleTemp + "°C";
+                            try {
+                                int intLine = Integer.parseInt(line);
+                                double doubleTemp = intLine / 1000;
+                                return doubleTemp + "°C";
+                            } catch (Exception e) { return null; }
                         }
                     })
     );
